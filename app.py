@@ -10,7 +10,7 @@ joke=[]
 def single_joke():
     joke.append(pyjokes.get_joke())
     length=len(joke)
-    return render_template("input.html",jokes=joke,len=length)
+    return render_template("output.html",jokes=joke,len=length)
 
 @app.route("/multiple_jokes")
 def multi_jokes():
@@ -18,7 +18,7 @@ def multi_jokes():
     for i in temp:
         joke.append(i)
     length=len(joke)
-    return render_template("input.html",jokes=joke,len=length)
+    return render_template("output.html",jokes=joke,len=length)
 
 if __name__=="__main__":
     app.run(debug=True)
