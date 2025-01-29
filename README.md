@@ -1,8 +1,12 @@
 # The LaughAPI
 
+
+
 **Overview**
 
 This is a simple Flask web application that generates and displays programming jokes using the pyjokes library. You can either get a single joke at a time or fetch multiple jokes at once.
+
+
 
 **Prerequisites**
 
@@ -13,6 +17,8 @@ Python installed (version 3.x recommended)
 Flask library installed
 
 pyjokes library installed
+
+
 
 **Installation & Setup**
 
@@ -27,6 +33,8 @@ Open a terminal and run the following command:
 pip install flask pyjokes
 
 This will install Flask and pyjokes, which are necessary for running the application.
+
+
 
 **Running the Application**
 
@@ -58,6 +66,8 @@ http://127.0.0.1:5000/multiple_jokes
 
 This will fetch multiple jokes and display them.
 
+
+
 **File Structure**
 
 app.py (or your chosen filename): Contains the main Flask app
@@ -70,11 +80,15 @@ The app runs in debug mode, meaning you can see errors in real-time.
 
 The page loads jokes dynamically using Flask's templating feature.
 
+
+
 **Troubleshooting**
 
 If you encounter a ModuleNotFoundError, make sure you have installed Flask and pyjokes using pip.
 
 Ensure output.html exists in the templates folder. You can create a simple HTML file that displays jokes inside a loop.
+
+
 
 **Future Improvements**
 
